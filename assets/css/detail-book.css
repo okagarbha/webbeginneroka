@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+
+* {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+section h2 {
+	font-size: 30px;
+	letter-spacing: -2px;
+	rotate: -1deg;
+	font-weight: 800;
+	color: rgb(0, 110, 255);
+	text-shadow: 4px 4px 0 rgb(255, 217, 0);
+	margin-bottom: 15px;
+}
+
+.container {
+	text-align: center;
+	padding: 20px;
+	padding-top: 125px;
+}
+
+#banner {
+	width: 95%;
+	height: 280px;
+	background-color: rgb(0, 110, 255);
+	border-radius: 20px;
+	margin: auto;
+	background-image: url("../img/marketplace-banner.png");
+	background-repeat: no-repeat;
+	background-position: 96% bottom;
+	background-size: 25%;
+	color: white;
+}
+
+.banner-title {
+	text-align: left;
+	padding: 35px 50px;
+	width: 60%;
+}
+
+.banner-title h1 {
+	font-size: 48px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: rgb(255, 230, 0);
+	text-shadow: 3px 3px 0 rgb(255, 70, 70);
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.banner-title a {
+	background-color: rgb(83, 178, 255);
+	text-decoration: none;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 7px;
+	box-shadow: 3px 3px 0 0 rgb(0, 96, 175);
+	display: inline-block;
+	margin-top: 15px;
+}
+
+hr {
+	margin: 40px 15px;
+}
+
+.genre {
+	display: inline-block;
+	width: 180px;
+	height: 40px;
+	color: white;
+	border-radius: 10px;
+	margin: 0 20px;
+	padding-top: 12px;
+}
+
+.genre i,
+.genre h3 {
+	display: inline;
+	vertical-align: middle;
+	margin: 0 2px;
+}
+
+.genre h3 {
+	font-weight: normal;
+}
+
+.genre.action {
+	background: linear-gradient(90deg, rgb(255, 72, 72), rgb(153, 14, 14));
+}
+
+.genre.fantasy {
+	background: linear-gradient(90deg, rgb(255, 208, 0), rgb(199, 97, 14));
+}
+
+.genre.romance {
+	background: linear-gradient(90deg, rgb(255, 42, 124), rgb(165, 13, 89));
+}
+
+.genre.sci-fi {
+	background: linear-gradient(90deg, rgb(0, 140, 255), rgb(13, 94, 187));
+}
+
+.genre.motivation {
+	background: linear-gradient(90deg, rgb(0, 204, 10), rgb(60, 165, 11));
+}
+
+.book {
+	max-width: 500px;
+	max-height: 320px;
+	border-radius: 10px;
+	overflow: hidden;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(238, 238, 238);
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	margin: 5px;
+}
+
+.cover {
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+
+.cover-detail-book {
+	float: left;
+	width: auto;
+	max-height: 320px;
+}
+
+.cover img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.info {
+	float: left;
+	padding: 20px;
+	text-align: left;
+}
+
+.title,
+.writer,
+.price {
+	margin: 0;
+}
+
+.writer {
+	font-size: 16px;
+	color: rgb(0, 110, 255);
+	text-decoration: none;
+}
+
+.title {
+	font-size: 25px;
+	line-height: 1;
+	max-width: 200px;
+	margin-top: 2px;
+}
+
+.summary {
+	max-width: 200px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.info hr {
+	margin: 20px 0;
+}
+
+.price {
+	display: block;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline;
+}
+
+.price button {
+	padding: 3px 5px;
+	border: 1px solid rgb(0, 110, 255);
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 10px;
+	background-color: rgb(0, 110, 255);
+	color: white;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+/* meeting 7 css  */
+.col-large {
+	max-width: 1000px;
+}
+
+.detail-book {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.detail-book h3 {
+	font-size: 48px;
+	text-align: left;
+}
+
+.detail-book a {
+	text-decoration: none;
+	text-align: left;
+	font-size: 22px;
+	color: #1da1f2;
+}
+
+.detail-book .price {
+	justify-content: left;
+	font-size: 48px;
+	font-weight: 400;
+	color: #1da1f2;
+}
+
+.detail-book .price span {
+	height: 15px;
+	font-size: 10px;
+	background-color: red;
+	color: white;
+	padding: 5px;
+	border-radius: 12px;
+	margin: 15px 0 0 5px;
+}
+
+.row .buy {
+	background-color: #006eff;
+	color: white;
+	width: 150px;
+	margin: 12px 10px;
+	padding: 4px 30px;
+	font-size: 22px;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+.row .chart {
+	color: #006eff;
+	width: 150px;
+	margin: 12px;
+	padding: 4px 0;
+	font-size: 22px;
+	border-radius: 10px;
+	border: none;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	border: 2px solid #006eff;
+	transition: all 0.5s;
+}
+
+.row .chart span {
+	width: 26px;
+	height: 5px;
+	border: 2px solid #006eff;
+	color: #006eff;
+	font-size: 19px;
+	border-radius: 50px;
+	padding: 0px 0 20px 0;
+	margin: 0 5px;
+	transition: all 0.5s;
+}
+
+.row .buy:hover {
+	color: #006eff;
+	background-color: transparent;
+	border: 2px solid #006eff;
+}
+.row .chart:hover {
+	background-color: #868686c5;
+	border: 2px solid #006eff;
+}
+
+.detail-book .row {
+	justify-content: left;
+}
+
+.subtitle {
+	color: #006eff;
+	font-size: 28px;
+	text-align: left;
+}
+
+.mt-5 {
+	margin-top: 50px;
+}
+
+.my-2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.col-large p {
+	text-align: justify;
+}
+
+.detail-produk table {
+	text-align: left;
+}
+td:nth-child(2) {
+	padding-left: 10px;
+}
+
+/* endmeeting 7 css */
+
+/* meeting 8 css */
+.input-group {
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.input-group label {
+	text-align: left;
+}
+
+.input-group input {
+	height: 30px;
+	border: 0 solid #d9d9d9;
+	background-color: #d9d9d9;
+	border-radius: 5px;
+}
+.count-group {
+	float: right;
+	right: 0;
+	width: fit-content;
+}
+.count-group button {
+	border: #006eff 2px solid;
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
+}
+.count-group input {
+	border: 0;
+	height: 30px;
+	width: 30px;
+}
+
+.checkout-title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.checkout-count {
+	margin-right: 0 !important ;
+	display: flex;
+	flex-direction: column;
+}
+.checkout-count p,
+.checkout-count h3 {
+	text-align: right;
+}
+/* end meeting 8 css */
+/* ----------------------------------- */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 92.6%;
+	padding: 15px 50px;
+	margin: auto;
+	background-color: white;
+	box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+}
+
+header nav ul {
+	display: flex;
+	gap: 40px;
+	list-style-type: none;
+}
+
+header a {
+	text-decoration: none;
+	color: rgba(0, 110, 255, 0.7);
+	font-size: 18px;
+}
+
+nav .active {
+	font-weight: bold;
+	color: rgb(0, 110, 255);
+}
+
+.auth {
+	display: flex;
+	gap: 10px;
+}
+
+.auth button {
+	border: 0;
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.auth .sign-up {
+	border: 1px solid rgb(0, 110, 255);
+	background-color: white;
+	color: rgb(0, 110, 255);
+}
+
+.auth .login {
+	background-color: rgb(0, 110, 255);
+	color: white;
+}
+
+.mx-auto {
+	margin: 0 auto;
+}
+/* ----------------------------------- */
+
+footer {
+	background-color: rgb(25, 43, 121);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	gap: 20px;
+	color: white;
+}
+
+footer .logo {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	letter-spacing: -4px;
+}
+
+footer nav ul {
+	display: flex;
+	gap: 40px;
+	list-style-type: none;
+}
+
+footer a {
+	color: white;
+}
+
+footer .socmed {
+	display: flex;
+	list-style-type: none;
+	gap: 20px;
+}
+
+footer .socmed li {
+	border: 1.5px solid white;
+	padding: 10px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: grid;
+	place-content: center;
+}
+
+footer .instagram {
+	background: linear-gradient(
+		45deg,
+		rgba(252, 175, 69, 1) 0%,
+		rgba(225, 48, 108, 1) 50%,
+		rgba(91, 81, 216, 1) 100%
+	);
+}
+
+footer .facebook {
+	background-color: #3f6cc7;
+}
+
+footer .twitter {
+	background-color: #1da1f2;
+}
+
+footer .socmed i {
+	font-size: 25px;
+}
+
+footer hr {
+	width: 100%;
+	border: none;
+	height: 1px;
+	background-color: white;
+	margin: 15px 0;
+}
+
+footer .copyright {
+	font-size: 14px;
+}
+
+footer .copyright i {
+	margin: 0 4px;
+}

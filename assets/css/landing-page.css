@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.jumbotron {
+	height: 100vh;
+	background-image: url("../img/jumbotron.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.jumbotron-bg {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-content: center;
+	text-align: left;
+}
+
+.jumbotron a {
+	max-width: 180px;
+	margin-top: 15px;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	padding: 5px;
+	background-color: rgb(255, 70, 70);
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+.jumbotron a:hover {
+	border: 1px solid rgb(255, 70, 70);
+	color: rgb(255, 70, 70);
+	background-color: transparent;
+}
+
+.title {
+	margin-top: 80px;
+}
+
+.title h1 {
+	font-size: 64px;
+	letter-spacing: -5px;
+}
+
+.title h2 {
+	font-size: 28px;
+	font-weight: normal;
+	font-style: italic;
+	color: rgb(99, 167, 255);
+	margin-top: -10px;
+}
+
+.description {
+	width: 700px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+/* ----------------------------------- */
+
+.section-wrapper {
+	padding: 50px 120px;
+}
+
+.section-wrapper {
+	text-align: center;
+}
+
+.section-wrapper h3 {
+	font-size: 36px;
+	letter-spacing: -3px;
+	color: rgb(0, 110, 255);
+	margin-bottom: 40px;
+}
+
+.book {
+	display: inline-block;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgb(238, 238, 238);
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	margin: 10px;
+}
+
+.book .cover {
+	width: 200px;
+	height: 320px;
+}
+
+.book .cover img {
+	width: 100%;
+}
+
+.book .rating {
+	padding: 7px;
+	font-size: 14px;
+	color: rgb(0, 110, 255);
+}
+
+.book .rating i {
+	font-size: 16px;
+	color: rgb(235, 192, 0);
+}
+
+.book .rating span {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.find-more {
+	text-align: center;
+	text-decoration: none;
+	color: rgb(0, 110, 255);
+	margin-top: 20px;
+	display: block;
+	font-size: 18px;
+}
+
+/* ----------------------------------- */
+
+#top-writer {
+	background-color: rgb(0, 110, 255);
+}
+
+#top-writer h3 {
+	color: white;
+}
+
+.writer {
+	text-align: center;
+	text-decoration: none;
+	color: rgb(0, 110, 255);
+	display: inline-block;
+	margin: 15px;
+}
+
+.writer .profile,
+.writer .profile img {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	color: white;
+}
+
+.writer .profile {
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+}
+
+.writer .info {
+	text-decoration: none;
+	background-color: white;
+	padding: 5px;
+	border-radius: 0 0 10px 10px;
+}
+
+.writer .info h4 {
+	font-size: 20px;
+}
+
+.writer .info p {
+	font-size: 14px;
+}
+
+/* ----------------------------------- */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 92.6%;
+	padding: 15px 50px;
+	margin: auto;
+	background-color: white;
+	box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+}
+
+header nav ul {
+	display: flex;
+	gap: 40px;
+	list-style-type: none;
+}
+
+header a {
+	text-decoration: none;
+	color: rgba(0, 110, 255, 0.7);
+	font-size: 18px;
+}
+
+nav .active {
+	font-weight: bold;
+	color: rgb(0, 110, 255);
+}
+
+nav .active:hover {
+	font-weight: lighter;
+	color: rgb(0, 110, 255);
+}
+
+.auth {
+	display: flex;
+	gap: 10px;
+}
+
+.auth button {
+	border: 0;
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.auth .sign-up {
+	border: 1px solid rgb(0, 110, 255);
+	background-color: white;
+	color: rgb(0, 110, 255);
+	transition: all 0.5s;
+}
+
+.auth .sign-up:hover {
+	border: 1px solid rgb(0, 110, 255);
+	background-color: rgb(0, 110, 255);
+	color: white;
+}
+
+.auth .login {
+	background-color: rgb(0, 110, 255);
+	color: white;
+	transition: all 0.5s;
+}
+
+.auth .login:hover {
+	background-color: white;
+	border: 1px solid rgb(0, 110, 255);
+	color: rgb(0, 110, 255);
+}
+
+/* ----------------------------------- */
+
+/* Value Proposition */
+#value-proposition {
+	padding-bottom: 0 !important;
+}
+.col-md-6 {
+	width: 600px;
+}
+
+.col-md-4 {
+	width: 400px;
+}
+.col-sm-2 {
+	width: 200px;
+}
+.circle-img {
+	background-color: lightgray;
+	border-radius: 100px;
+	width: 60px;
+	height: 60px;
+}
+
+.text-left {
+	text-align: left !important;
+	font-size: 14px;
+}
+
+.text-1 {
+	font-size: 12px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list-value-proposition {
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.list-value-proposition p {
+	width: 450px;
+}
+
+.banner-right {
+	max-width: 600px;
+	height: auto;
+}
+
+#testimonial {
+	background-color: #006eff;
+}
+
+.list-testimonial {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+li {
+	list-style: none;
+}
+
+ul li a {
+	font-weight: normal;
+	transition: all 0.5s;
+}
+
+ul li a:hover {
+	font-weight: bolder;
+}
+
+.text-white,
+ul li h3 {
+	color: white !important;
+}
+
+.rating {
+	color: gold;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.mr-2 {
+	margin-right: 20px;
+}
+
+.card-img {
+	height: 200px;
+	width: 100px;
+	background-color: lightgray;
+	border-radius: 12px;
+}
+
+.justify-content-around {
+	justify-content: space-around;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+/* End Value Proposition */
+footer {
+	background-color: rgb(25, 43, 121);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	gap: 20px;
+	color: white;
+}
+
+footer .logo {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	letter-spacing: -4px;
+}
+
+footer nav ul {
+	display: flex;
+	gap: 40px;
+	list-style-type: none;
+}
+
+footer a {
+	color: white;
+}
+
+footer .socmed {
+	display: flex;
+	list-style-type: none;
+	gap: 20px;
+}
+
+footer .socmed li {
+	border: 1.5px solid white;
+	padding: 10px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: grid;
+	place-content: center;
+}
+
+footer .instagram {
+	background: linear-gradient(
+		45deg,
+		rgba(252, 175, 69, 1) 0%,
+		rgba(225, 48, 108, 1) 50%,
+		rgba(91, 81, 216, 1) 100%
+	);
+}
+
+footer .facebook {
+	background-color: #3f6cc7;
+}
+
+footer .twitter {
+	background-color: #1da1f2;
+}
+
+footer .socmed i {
+	font-size: 25px;
+}
+
+footer hr {
+	width: 100%;
+	border: none;
+	height: 1px;
+	background-color: white;
+	margin: 15px 0;
+}
+
+footer .copyright {
+	font-size: 14px;
+}
+
+footer .copyright i {
+	margin: 0 4px;
+}
